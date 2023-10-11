@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <meta charset="UTF-8">
+        <style>
+            .container{
+                width: 80%; /* 80% of the viewport width */
+                max-width: 1000px; /* Maximum width of 600 pixels */
+                height: 80%; /* Height of the rectangular box */
+                max-height: 120px;
+                min-height: 70px;
+                background-color: lightgray; /* Background color of the rectangular box */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 0 auto; /* Center the container horizontally */
+            }
+            .oval{
+                width: 14%;
+
+                padding-top: 14%; /* Maintain aspect ratio (height = width) */
+                background-color: lightblue; /* Background color of the oval */
+                border-radius: 100%; /* This creates an oval shape */
+            }
+        </style>
+    </head>
+<body>
+
+    <h1>My First Heading</h1>
+    <div class="container">
+        <div class="oval"></div>
+        <div class="oval"></div>
+        <div class="oval"></div>
+        <div class="oval"></div>
+        <div class="oval"></div>
+
+    </div>
+
+    <p>My first paragraph.</p>
+
+</body>
+</html>
