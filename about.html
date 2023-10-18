@@ -4,37 +4,88 @@
         <title>About us</title>
         <meta charset="UTF-8">
         <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                margin: 0px;
+            }
             .container{
-                width: 80%; /* 80% of the viewport width */
-                max-width: 1000px; /* Maximum width of 600 pixels */
-                height: 80%; /* Height of the rectangular box */
-                max-height: 120px;
-                min-height: 70px;
+                width: 100%; /* 100% of the viewport width */
+                height: 150; /* Height of the rectangular box */
+                max-height: 200px;
+                /* min-height: 70px; */
                 background-color: lightgray; /* Background color of the rectangular box */
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 10px;
+                padding-bottom: 20px;
+            
                 margin: 0 auto; /* Center the container horizontally */
+            }
+            .texts_circle{
+                position:absolute;
+                bottom:-20px;
+                left: 50%;
+                transform: translateX(-50%);
+
+
             }
             .oval{
                 width: 14%;
-
                 padding-top: 14%; /* Maintain aspect ratio (height = width) */
                 background-color: lightblue; /* Background color of the oval */
-                border-radius: 100%; /* This creates an oval shape */
+                border-radius: 100%; 
+                position: relative;
+            }
+            .spacers{
+                width: 100%;
+                height: 50%;
+                background-color: aquamarine;
+                display: block;
+                justify-content: space-between;
+                align-items: center;
+
             }
         </style>
     </head>
 <body>
 
-    <h1>My First Heading</h1>
+    <h1>About Us</h1>
     <div class="container">
-        <div class="oval"></div>
-        <div class="oval"></div>
-        <div class="oval"></div>
-        <div class="oval"></div>
-        <div class="oval"></div>
+        <div class="oval">
+            <div class="texts_circle">
+                Yiming
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Ismail
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Amani
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Leo
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Jamie
+            </div>
+        </div>
+
+    </div>
+    <div class="spacers">
+        <p>adfasdf</p>
+    </div>
+    <div class="principles">
+
 
     </div>
 
