@@ -1,26 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About us</title>
-        <meta charset="UTF-8">
-        <style>
-            h1{
-                text-align: center;
-            }
-            body{
-                margin: 0px;
-            }
-            .container{
-                width: 100%; /* 100% of the viewport width */
+<head>
+    <title>About us</title>
+    <meta charset="UTF-8">
+    <style>
+        h1, h3 {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            background-color: darkgray;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Optional: Set a maximum width for the content */
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+        
+
+        .header-container {
+            width: 100%; /* 100% of the viewport width */
                 height: 150; /* Height of the rectangular box */
-                max-height: 200px;
+                /* max-height: 200px; */
                 /* min-height: 70px; */
                 background-color: lightgray; /* Background color of the rectangular box */
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 10px;
-                padding-bottom: 20px;
+                padding-bottom: 40px;
+            
+                margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .oval {
+            width: 18%;
+            padding-top: 18%;
+            background-color: lightblue;
+            border-radius: 50%;
+            position: relative;
+        }
+        .texts_circle{
+                position:absolute;
+                bottom:-20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        .content-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .boxes {
+            width: 30%;
+            max-width: 250px; /* Optional: Set a maximum width for the boxes */
+            height: 150px;
+            background-color: bisque;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>About Us</h1>
+    <div class="container header-container">
+        <div class="oval">
+            <div class="texts_circle">
+                Yiming
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Ismail
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Amani
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Leo
+            </div>
+        </div>
+        <div class="oval">
+            <div class="texts_circle">
+                Jamie
+            </div>
+        </div>
+    </div>
+    <h3>The history</h3>
+    <div class="container content-container">
+        <div class="boxes">
+            <p>Skill</p>
+        </div>
+        <div class="boxes">
+            <p>Skill</p>
+        </div>
+        <div class="boxes">
+            <p>Skill</p>
+        </div>
+    </div>
+
+    <h3 style="text-align: center;">Our Principles</h3>
+    <div class="container">
+        <p style="text-align: center;">blah blah blah</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <meta charset="UTF-8">
+        <style>
+            h1,h3{
+                text-align: center;
+            }
+
+            body{
+                margin: 0px;
+                background-color: darkgray;
+            }
+            .container{
+                width: 100%; /* 100% of the viewport width */
+                height: 150; /* Height of the rectangular box */
+                /* max-height: 200px; */
+                /* min-height: 70px; */
+                background-color: lightgray; /* Background color of the rectangular box */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                padding-bottom: 40px;
             
                 margin: 0 auto; /* Center the container horizontally */
             }
@@ -35,18 +165,37 @@
             .oval{
                 width: 14%;
                 padding-top: 14%; /* Maintain aspect ratio (height = width) */
+                /* max-width: 200px;
+                max-height: 200px; */
                 background-color: lightblue; /* Background color of the oval */
                 border-radius: 100%; 
                 position: relative;
             }
             .spacers{
                 width: 100%;
-                height: 50%;
+                height: 25px;
                 background-color: aquamarine;
-                display: block;
-                justify-content: space-between;
+                margin-top: -17px;
                 align-items: center;
+                display: flex;
+                justify-content: center;
 
+            }
+            .boxes{
+                width: 25%;
+                height: ;
+                background-color: bisque;
+                position: relative;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin: 10px;
+            }
+            p{
+                text-align: center; 
+                margin: 0; display: 
+                flex; justify-content: 
+                center; align-items: 
+                center; height: 100%
             }
         </style>
     </head>
@@ -82,15 +231,31 @@
 
     </div>
     <div class="spacers">
-        <p>adfasdf</p>
     </div>
-    <div class="principles">
+    <h3 style="text-align: center;">Our Guiding Principles</h3>
 
+    <div class="container">
+        <div class="boxes">
+            <p>Skill</p>
 
+        </div>
+        <div class="boxes">
+            <p>Skill</p>
+
+        </div>
+        <div class="boxes">
+            <p>Skill</p>
+
+        </div>
+    </div>
+    <div class="spacers"></div>
+    <h3>Our Principles</h3>
+    <div class="container">
+        <p>blah blah blah</p>
     </div>
 
-    <p>My first paragraph.</p>
-    <h2>blah</h2>
+
+
 
 </body>
-</html>
+</html> -->
