@@ -3,36 +3,49 @@
     <head>
         <style>
             body {
-                background-color:rgb(255, 255, 255);
-                margin-top:0%;
+                background-color:rgb(192, 238, 238);
+                margin: 0;
+    
+                font-family: Trebuchet MS;
+                color: rgb(37, 75, 75);
             }
 
             .title {
                 height: 80px;
                 width: 100%;  
-                background-color:rgb(222, 253, 253);
+                background-color:rgb(214, 252, 252);
             }
 
             h1{
+                margin: 0;
                 position: relative;
                 text-align: center;
-                font-size: 24;
                 top: 25%;
             }
-            .sectionOne{
-                position: absolute;
-                text-align: center;
-                left: 5%;
-                top: 30%;
-                font-size: 15;
+
+            .container{
+                display: flex;
+                transform: translateY(30px);
             }
 
-            .sectionTwo{
-                position: absolute;
+            .photo{
+                position: relative;
+                margin: 30px;
+                width: 22vw;
+                height: 22vw;
+                border: 10px solid rgb(179, 236, 236);
+                background-color: rgb(214, 252, 252);
+            }
+            .section{
                 text-align: center;
-                left: 50%;
-                top: 30%;
-                
+                flex: 1;
+                transform: translateY();
+            }
+
+            .description{
+                font-size: 13px;
+                margin-left: 25px;
+                margin-right: 25px;
             }
         </style>
     </head>
@@ -40,30 +53,41 @@
         <div class = "title"> 
             <h1> Why choose RhythmMaster? </h1>
         </div>
-        <div class="sectionOne">
-            <div class="headerOne">
-                <h3>Music Made Easy</h3>
+        <div class="container">
+            <div class="section">
+                <div class="photo">
+                    
+                </div>
+                <div class="header">
+                    <h4>Music Made Easy</h4>
+                </div>
+                <div class="description">
+                    blah blahb lbbl blfkdi fjgijij fijsijidjsfij idsjifjsijfi sdjifjisj ifjisjif jsdijiji
+                </div>
             </div>
-            <div class="descriptionOne">
-                
-            </div>
-        </div>
 
-        <div class="sectionTwo">
-            <div class="headerOne">
-                <h3>Interactive Learning Roadmap</h3>
+            <div class="section">
+                <div class="photo">
+                    
+                </div>
+                <div class="header">
+                    <h4>Interactive Learning Roadmap</h4>
+                </div>
+                <div class="description">
+                    blah blah blabh alhbal hal halbhal bhal bhalbhalbh albhalbh alhb alhblahbl ahblh
+                </div>
             </div>
-            <div class="descriptionOne">
-                
-            </div>
-        </div>
 
-        <div class="sectionThree">
-            <div class="headerOne">
-                <h3>Cheaper Alternative</h3>
-            </div>
-            <div class="descriptionOne">
-                
+            <div class="section">
+                <div class="photo">
+                    
+                </div>
+                <div class="header">
+                    <h4>Cheaper Alternative</h4>
+                </div>
+                <div class="description">
+                    blah blah very cheap very good description better than yousician we are
+                </div>
             </div>
         </div>
     </body>
