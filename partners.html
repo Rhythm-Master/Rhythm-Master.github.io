@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Center the container horizontally and vertically */
+        .container {
+            width: 800px; /* Fixed width of 800px */
+            max-width: 80%; /* Maximum width of 80% of the viewport width */
+            background-color: #f0f0f0; /* Background color of the container */
+            border: 2px solid #333; /* Border properties */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+
+        /* Style for the left and right sides with background images */
+        .left-side, .right-side {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('your-background-image.jpg');
+            background-size: cover; /* Adjust to your image size preferences */
+        }
+
+        /* Style for titles */
+        .title {
+            font-weight: bold;
+        }
+
+        /* Style for lists */
+        ul {
+            list-style: disc;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Background color behind lists */
+            padding: 10px; /* Add padding to improve readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2 class="title">Left Side</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <h2 class="title">Right Side</h2>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
