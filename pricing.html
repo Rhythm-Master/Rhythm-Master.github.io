@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                margin-top:80px;
+                padding:0;
+            }
+
+            header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                display: flex;
+                width: 100%;
+                align-items: center;
+
+            }
+
+            header img{
+                width: 100px;
+                height: auto;
+                border-radius: 3cap;
+                margin-left: 10px;
+            }
+
+            header h1{
+                margin-left: 10px;
+                color: #999;
+            }
+
+            header ul{
+                vertical-align:bottom;
+                width: max-content;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                flex-grow: 1;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 0;
+            }
+
+            header ul p{
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+                flex: 1;
+                justify-content: center;
+                height: 100%;
+                color: #999;
+                padding: 10px 20px;
+                margin:0;
+                background-color: #111;
+            }
+
+            header ul p:hover{
+                background-color: #333;
+                text-decoration: underline;
+            }
+            
+            .container{
+                /* used yimings code to make it look more cohesive in the end, but changed the height*/
+                width: 100%; /* 100% of the viewport width */
+                height: auto; /* Height of the rectangular box */
+                /* max-height: 200px; */
+                /* min-height: 70px; */
+                background-color: lightgray; /* Background color of the rectangular box */
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                padding: 30px;
+                padding-bottom: 40px;
+                flex-grow: 1;
+                margin: 0 auto; /* Center the container horizontally */
+            }
+
+            .boxes {
+                width: 50%;
+                max-width: 500px; /* Optional: Set a maximum width for the boxes */
+                background-color: #333;
+                margin: 30px;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxes img{
+                width: 70%;
+                height: auto;
+                border-radius: 3cap;
+                margin: 10px;    
+            }
+
+
+            .boxes ul{
+                width: 70%;
+                height: auto;
+                border-radius: 3cap;
+                margin: 10px;    
+                text-align: center;
+            }
+
+            .boxes ul li{
+                margin-left: 1em;
+                color: #999;
+                text-align: left;
+               /* background-color: aqua;*/
+            }
+
+        </style>
+
+    </head>
+
+    <header>
+        <!--dummy images for all-->
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg" alt="hello">
+        
+        <h1>
+            Rhythm Master
+        </h1>
+        <ul>
+            <p>Home</p>
+            <p>About</p>
+            <p>Features</p>
+            <p>Why us?</p>
+            <p>Partners</p>
+        </ul>
+    </header>
+    <body>
+        <div class="container">
+            <div class="boxes">
+                <h1 style="color: #999;">
+                    Free
+                </h1>
+                <h2 style="color: #999;">
+                    A taste of our incredible features
+                </h2>
+                <!--dummy images, change to something cheesy like someone playing a violin-->
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg" alt="hello">
+                <ul>
+                    <li><p>Pitch detection for immediate feedback</p></li>
+                    <li><p>AI coaches to detect playing performance</p></li>
+                    <li><p>Personalized learning roadmap</p></li>
+                    <li><p>Daily goals</p></li>
+                </ul>
+            </div>
+            <div class="boxes">
+                <h1 style="color: #999;">
+                    Pro
+                </h1>
+                <h2 style="color: #999;">
+                    $10.00/month
+                </h2>
+                <!--dummy images, change to BAGPIPES!!!-->
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg" alt="hello">
+                <ul>
+                    <li><p>Pitch detection for immediate feedback</p></li>
+                    <li><p>AI coaches to detect playing performance</p></li>
+                    <li><p>Personalized learning roadmap</p></li>
+                    <li><p>Daily goals</p></li>
+                    <li><p>Access to real time coaches through the partners program</p></li>
+                    <li><p>Access to courses through the partners program</p></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
