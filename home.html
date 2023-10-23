@@ -2,103 +2,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        .parallax-1 {
-            width: 100%;
-            height: 600px;
-            background: url(
-                images/piano.png);
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }
-        .parallax-1 h2 {
-            margin: auto;
-            position: relative;
-            left: 500x;
-            top: 300px;
-            width: 250px;
-            height: 32px;
-            padding: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
-        .parallax-2 {
-            width: 100%;
-            height: 600px;
-            background: url(
-          'https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg');
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }
-        .parallax-2 h2 {
-            margin: auto;
-            position: relative;
-            left: 500x;
-            top: 300px;
-            width: 250px;
-            height: 37px;
-            padding: 10px;
-            background-color: white;
-            color: black;
-            text-align: center;
-            font-size: 30px;
-            font-family: Verdana;
-        }
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
 
-        .para-1 {
-            padding: 50px;
-            background-color: black;
-            color: white;
-            font-size: 17px;
-        }
+		.header {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			color: white;
+		}
 
-        .para-2 {
-            text-align: center;
-            padding: 25px;
-            font-size: 17px;
-            font-family: Verdana;
-            background-color: black;
-            color: white;
-        }
-    </style>
+		.logo {
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+		}
+
+		.company-name {
+			font-size: 20px;
+			font-weight: bold;
+			color: rgb(0, 0, 0);
+		}
+
+		.parallax-1 {
+			width: 100%;
+			height: 600px;
+			background: url(images/piano.png);
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+		.parallax-1 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width: 250px;
+			height: 32px;
+			padding: 10px;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+
+		.parallax-2 {
+			width: 100%;
+			height: 600px;
+			background: href img('https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+		.parallax-2 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width: 250px;
+			height: 37px;
+			padding: 10px;
+			background-color: white;
+			color: black;
+			text-align: center;
+			font-size: 30px;
+			font-family: Verdana;
+		}
+
+		.para-1 {
+			padding: 50px;
+			background-color: black;
+			color: white;
+			font-size: 17px;
+		}
+
+		.para-2 {
+			text-align: center;
+			padding: 25px;
+			font-size: 17px;
+			font-family: Verdana;
+			background-color: black;
+			color: white;
+		}
+
+		.button-container {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+
+		.button {
+			display: inline-block;
+			margin-right: 10px;
+			padding: 10px 20px;
+			background-color: transparent;
+			color: black;
+			text-decoration: none;
+			border-radius: 5px;
+			border: 2px solid black;
+		}
+
+		.button-top {
+			border-radius: 5px;
+			border: 2px solid black;
+			padding: 10px 20px;
+			background-color: #a44269;
+			color: white;
+		}
+	</style>
 </head>
 
 <body>
+	<div class="header">
+		<img class="logo" src="path/to/logo.png" alt="Company Logo">
+		<h1 class="company-name">RhythmMaster</h1>
+	</div>
 
-    <div class="parallax-1">
-        <h2>RhythmMaster</h2>
-    </div>
+	<div class="button-container">
+		<a class="button" href="#">About</a>
+		<a class="button" href="#">Projects</a>
+		<a class="button" href="#">Pricing</a>
+		<a class="button-top" href="#">Login/Sign Up</a>
+	</div>
 
-    <div class="para-2">
-        <p>
-            music app
-        </p>
-    </div>
+	<div class="parallax-1">
+		<h2>RhythmMaster</h2>
+	</div>
 
-    <div class="parallax-2">
-        <h2>sign up</h2>
-    </div>
+	<div class="para-2">
+		<p>music app</p>
+	</div>
 
-    <div class="para-2">
-        <p>
-             music app
-        </p>
-    </div>
+	<div class="parallax-2">
+		<h2>sign up</h2>
+	</div>
 
-    <div class="parallax-1">
-        <h2>RhythmMaster</h2>
-    </div>
+	<div class="para-2">
+		<p>music app</p>
+	</div>
 
-    <div class="para-2">
-        <p>
-             music app
-        </p>
-    </div>
+	<div class="parallax-1">
+		<h2>RhythmMaster</h2>
+	</div>
+
+	<div class="para-2">
+		<p>music app</p>
+	</div>
 </body>
 </html>
+
 
