@@ -1,0 +1,52 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+header img{
+    width: 100px;
+    height: auto;
+    border-radius: 3cap;
+    margin-left: 10px;
+}
+
+header h1{
+    margin-left: 10px;
+    color: #999;
+}
+
+header ul{
+    vertical-align:bottom;
+    width: max-content;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+header ul p{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    color: #999;
+    padding: 10px 20px;
+    margin:0;
+    background-color: #111;
+}
+
+header ul p:hover{
+    background-color: #333;
+    text-decoration: underline;
+}
