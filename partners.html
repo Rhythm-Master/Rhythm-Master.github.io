@@ -1,167 +1,171 @@
 <!DOCTYPE html>
 <html>
-        <head>
-            <style>
-                /* Header styles */
-                header {
-                    background-color: #111;
-                    color: #999;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 20px;
-                }
+    <head>
+        <style>
+            body{
+                background-color: #5e4352;
+                margin: 0;
+                margin-top:80px;
+                padding:0;
+            }
 
-                header h1 {
-                    font-size: 24px;
-                    margin: 0;
-                }
+            header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #f56476;
+                display: flex;
+                width: 100%;
+                align-items: center;
 
-                header nav ul {
-                    list-style: none;
-                    padding: 0;
-                    display: flex;
-                }
+            }
 
-                header nav ul li {
-                    margin-right: 20px;
-                }
+            header img{
+                width: 100px;
+                height: auto;
+                border-radius: 3cap;
+                margin-left: 10px;
+            }
 
-                .container {
-                    width: 800px; /* Fixed width of 800px */
-                    max-width: 80%; /* Maximum width of 80% of the viewport width */
-                    background-color: #f0f0f0; /* Background color of the container */
-                    border: 2px solid #333; /* Border properties */
-                    margin-top: 100px; /* Add margin to avoid overlapping with the navigation bar */
-                    display: flex;
-                }
+            header h1{
+                margin-left: 10px;
+                color: #5e4352;
+            }
 
-                /* Style for the left and right sides with background images */
-                .left-side, .right-side {
-                    flex: 1;
-                    padding: 20px;
-                    box-sizing: border-box;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    background-image: conductor.jpg('conductor.jpg');
-                    background-size: cover; /* Adjust to your image size preferences */
-                }
+            header ul{
+                vertical-align:bottom;
+                width: max-content;
+                height: 100%;
+                list-style: none;
+                display: flex;
+                flex-grow: 1;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 0;
+            }
 
-                /* Style for titles */
-                .title {
-                    font-weight: bold;
-                }
+            header ul p{
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+                flex: 1;
+                justify-content: center;
+                height: 100%;
+                color: #5e4352;
+                padding: 10px 20px;
+                margin:0;
+                background-color: #f56476;
+            }
 
-                /* Style for lists */
-                ul {
-                    list-style: disc;
-                    text-align: center;
-                    background-color: rgba(255, 255, 255, 0.7); /* Background color behind lists */
-                    padding: 10px; /* Add padding to improve readability */
-                }
-                .button-container {
-                    width: 100%;
-                    text-align: center;
-                    background-color: #f0f0f0;
-                    padding: 20px 0; /* Add padding to improve spacing */
-                }
+            header ul p:hover{
+                background-color: #dfbbb1;
+                text-decoration: underline;
+            }
+            
+            .container{
+                /* used yimings code to make it look more cohesive in the end, but changed the height*/
+                width: 100%; /* 100% of the viewport width */
+                height: auto; /* Height of the rectangular box */
+                /* max-height: 200px; */
+                /* min-height: 70px; */
+                background-color: #d1c9c6; /* Background color of the rectangular box */
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                padding: 30px;
+                padding-bottom: 40px;
+                flex-grow: 1;
+                margin: 0 auto; /* Center the container horizontally */
+            }
 
-                .button-container button {
-                    margin: 5px; /* Add some space between the buttons */
-                }
-            </style>
-        </head>
-    <body>
-        <header>
-            <h1>Rhythm Master</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#Why Us?">Why Us?</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                </ul>
-            </nav>
-        </header>
+            .boxes {
+                width: 50%;
+                max-width: 500px; /* Optional: Set a maximum width for the boxes */
+                background-color: #5e4352;
+                margin: 30px;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-        <head>
-            <style>
-                /* Center the container horizontally and vertically */
-                .container {
-                    width: 1200px; /* Fixed width of 1100px */
-                    max-width: 80%; /* Maximum width of 80% of the viewport width */
-                    background-color: #f0f0f0; /* Background color of the container */
-                    border: 2px solid #333; /* Border properties */
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    display: flex;
-                    }
+            .boxes img{
+                width: 70%;
+                height: auto;
+                border-radius: 3cap;
+                border-style: outset;
+                border-color: #5e4352;
+                margin: 10px;   
+            }
+
+
+            .boxes ul{
+                width: 70%;
+                height: auto;
+                border-radius: 3cap;
+                margin: 10px;    
+                text-align: center;
+            }
+
+            .boxes ul li{
+                margin-left: 1em;
+                color: #d1c9c6;
+                text-align: left;
+               /* background-color: aqua;*/
+            }
+
+        </style>
+
+    </head>
+
+    <header>
+        <!--dummy images for all-->
+        <img src=""C:\web_projects\Rhythm-Master.github.io\pictures used\logo.png"" alt="hello">
         
-                /* Style for the left and right sides with background images */
-                .left-side, .right-side {
-                    flex: 1;
-                    padding: 20px;
-                    box-sizing: border-box;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    background-image: url('your-background-image.jpg');
-                    background-size: cover; /* Adjust to your image size preferences */
-                }
-        
-                /* Style for titles */
-                .title {
-                    font-weight: bold;
-                }
-        
-                /* Style for lists */
-                ul {
-                    list-style: disc;
-                    text-align: center;
-                    background-color: rgba(255, 255, 255, 0.7); /* Background color behind lists */
-                    padding: 10px; /* Add padding to improve readability */
-                }
-            </style>
-        </head>
+        <h1>
+            Rhythm Master
+        </h1>
+        <ul>
+            <p>Home</p>
+            <p>About</p>
+            <p>Features</p>
+            <p>Why us?</p>
+            <p>Partners</p>
+        </ul>
+    </header>
     <body>
         <div class="container">
-            <div class="left-side">
-                <h2 class="title">Why Join?</h2>
+            <div class="boxes">
+                <h1 style="color: #d1c9c6;">
+                    Why Join?
+                </h1>
+            
+                <!--dummy images, change to something cheesy like someone playing a violin-->
+                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\violinGuy.jpg" alt="Conducter">
                 <ul>
-                    <li>Teachers Get Paid</li>
-                    <li>Students Recieve a Personalized Experience</li>
-                    <li>Join a Global Community</li>
+                    <li><p>Teachers are Paid to Share Their Knowledge</p></li>
+                    <li><p>Students Recieve a Personalized Experience</p></li>
+                    <li><p>Join a Supportive, Global Community</p></li>
                 </ul>
             </div>
-            <div class="right-side">
-                <h2 class="title">What Is It?</h2>
+            <div class="boxes">
+                <h1 style="color: #d1c9c6;">
+                    Pro
+                </h1>
+             
+                <!--dummy images, change to BAGPIPES!!!-->
+                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\bagpipeGuy.jpg" alt="Conducter">
                 <ul>
-                    <li>Verified Users Teach Classes</li>
-                    <li>Teachers from around the globe teach a plethera of instruments</li>
-                    <li>Only for Pro Subscriptions</li>
+                    <li><p>Verified Users Teach Classes</p></li>
+                    <li><p>Teachers from around the globe teach a plethera of instruments</p></li>
+                    <li><p>Only for Pro Subscriptions
+</p></li>
+                 
+                  
                 </ul>
             </div>
-        </div>
-    <style>
-        .button-container {
-        text-align: center; /* Center-align the buttons */
-        }
-        .button-container button {
-        margin: 5px; /* Add some space between the buttons */
-        }
-    </style>
-</head>
-    <body>
-
-    <!-- Button container at the bottom of the page -->
-        <div class="button-container">
-            <button>Become A Partner</button>
-            <button>Start Learning</button>
         </div>
     </body>
-
-</body>
+</html>
