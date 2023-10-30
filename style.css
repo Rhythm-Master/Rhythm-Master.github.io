@@ -2,10 +2,11 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #f56476;
     display: flex;
     width: 100%;
     align-items: center;
+
 }
 
 header img{
@@ -17,7 +18,7 @@ header img{
 
 header h1{
     margin-left: 10px;
-    color: #999;
+    color: #5e4352;
 }
 
 header ul{
@@ -39,13 +40,13 @@ header ul p{
     flex: 1;
     justify-content: center;
     height: 100%;
-    color: #999;
+    color: #5e4352;
     padding: 10px 20px;
     margin:0;
-    background-color: #111;
+    background-color: #f56476;
 }
 
 header ul p:hover{
-    background-color: #333;
+    background-color: #e0426e;
     text-decoration: underline;
 }
