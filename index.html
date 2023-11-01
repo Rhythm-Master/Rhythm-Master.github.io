@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
   <style>
-    body {
-      background-color: #d1c9c6;
-      margin: 0;
-      margin-top: 80px;
-      padding: 0;
+    * {
+      margin: 0px;
+      padding: 0px;
     }
 
     .header {
@@ -15,7 +13,6 @@
       padding: 10px;
       color: white;
     }
-
     .logo {
       width: 50px;
       height: 50px;
@@ -26,60 +23,74 @@
       font-size: 20px;
       font-weight: bold;
       color: rgb(0, 0, 0);
-      font-family: Arial;
+	  font-family: Arial;
     }
 
     .parallax-1 {
-      width: 100%;
-      height: 600px;
-      background: url(images/piano.png);
-      background-size: 100% 100%;
-      background-attachment: fixed;
-      font-size: 30px;
-      font-family: Arial;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: 5px solid rgb(95, 9, 60);
-      border-color: #a44269;
+		width: 100%;
+        height: 600px;
+        background: url(images/piano.png);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        font-size: 30px;
+        font-family: Arial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+		border: 5px solid rgb(95, 9, 60);
+		border-color: #a44269;
     }
 
     .parallax-1 h2 {
-      margin: 0;
-      padding: 10px;
-      color: rgb(0, 0, 0);
-      text-align: center;
+		margin: 0;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
     }
-
-    .parallax-1 h4 {
-      margin: 0;
-      padding: 10px;
-      color: rgb(94, 91, 91);
-      text-align: center;
-      font-family: Arial;
-    }
+	.parallax-1 h4 {
+		margin: 0;
+        padding: 10px;
+        color: rgb(94, 91, 91);
+        text-align: center;
+        font-family: Arial;
+	}
 
     .parallax-2 {
       width: 100%;
       height: 600px;
-      background: url('https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg');
+      background: href img('https://static.vecteezy.com/system/resources/thumbnails/000/696/278/small/textured-black-background.jpg');
       background-size: 100% 100%;
       background-attachment: fixed;
     }
 
     .parallax-2 h2 {
-      margin: auto;
-      width: 250px;
-      height: 37px;
-      padding: 10px;
-      background-color: white;
-      color: rgb(226, 208, 214);
-      text-align: center;
-      font-size: 24px;
-      font-family: Arial;
+		margin: auto;
+        width: 250px;
+        height: 37px;
+        padding: 10px;
+        background-color: white;
+        color: rgb(226, 208, 214);
+        text-align: center;
+        font-size: 24px; 
+        font-family: Arial; 
+    }
+	
+    .para-1 {
+      padding: 50px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      font-size: 17px;
     }
 
+    .para-2 {
+      text-align: center;
+      padding: 25px;
+      font-size: 17px;
+      font-family: Arial;
+      background-color: black;
+      color: white;
+    }
 
     .button-container {
       position: absolute;
@@ -96,7 +107,7 @@
       text-decoration: none;
       border-radius: 5px;
       border: 2px solid black;
-      font-family: Arial;
+	  font-family: Arial;
     }
 
     .button-top {
@@ -105,35 +116,36 @@
       padding: 10px 20px;
       background-color: #a44269;
       color: white;
-      text-decoration: none;
-      font-family: Arial;
+	  text-decoration: none;  
+	  font-family: Arial;
     }
 
     .button-signup {
-      margin: auto;
-      position: absolute;
-      width: 300px;
-      height: 50px;
-      padding: 10px;
-      background-color: rgb(241, 236, 239);
-      color: rgb(109, 7, 65);
-      text-align: center;
-      border-radius: 10px;
-      left: 50%;
-      top: 150%;
-      transform: translate(-50%, -50%);
-      font-size: 35px;
-      border: 5px solid rgb(0, 0, 0);
-      text-decoration: none;
+		margin: auto;
+		position: absolute;
+        width: 300px;
+        height: 50px;
+        padding: 10px;
+        background-color: rgb(241, 236, 239);
+        color: rgb(109, 7, 65);
+        text-align: center;
+        border-radius: 10px;
+        left: 50%;
+        top: 150%;
+        transform: translate(-50%, -50%);
+		font-size: 35px;
+		border: 5px solid rgb(0, 0, 0);
+		text-decoration: none;  
     }
+
   </style>
   <script>
-
+    document.addEventListener('DOMContentLoaded', function() {
       const signUpButton = document.querySelector('.button-signup');
       signUpButton.addEventListener('click', function() {
         alert('Thank you for signing up!');
       });
-    ;
+    });
   </script>
 </head>
 
@@ -151,7 +163,7 @@
   </div>
 
   <div class="parallax-1">
-    <h4>Welcome to</h4>
+	<h4>Welcome to</h4>
     <h2>RhythmMaster</h2>
   </div>
 
@@ -172,7 +184,7 @@
   </div>
 
   <div class="para-2">
-    <p>learn from anywhere!</p>
+    <p>learn form anyhwere!</p>
   </div>
 </body>
 </html>
