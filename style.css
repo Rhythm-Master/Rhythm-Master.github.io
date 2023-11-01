@@ -4,7 +4,7 @@ body{
     margin-top:80px;
     padding:0;
 }
-
+/* 
 header{
     position: fixed;
     top: 0;
@@ -59,7 +59,7 @@ header ul p{
 header ul p:hover{
     background-color: #e0426e;
     text-decoration: underline;
-}
+} */
 
 .jamieContainer{
     /* used yimings code to make it look more cohesive in the end, but changed the height*/
