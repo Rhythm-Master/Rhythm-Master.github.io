@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <meta charset="UTF-8">
+        <style>
+            .container {
+                width: 100%;
+                height: 150px; /* Adjust the height as needed */
+                max-height: 200px;
+                min-height: 70px;
+                background-color: lightgray;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 0 auto;
+            }
+
+            .oval {
+                width: 14%;
+                max-width: -content;
+                padding-top: 14%;
+                position: relative;
+            }
+
+            .oval img {
+                width: 100%; /* Make the image fill the oval */
+                height: 100%; /* Make the image fill the oval */
+                border-radius: 50%; /* Maintain the circular shape */
+            }
+
+            .oval-text {
+                position: absolute;
+                bottom: -20px; /* Adjust the distance of the text from the oval */
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1; /* Ensure the text is displayed above the image */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My First Heading</h1>
+        <div class="container">
+            <div class="oval">
+                <img src="image1.jpg" alt="Image 1">
+                <div class="oval-text">Text 1</div>
+            </div>
+            <div class="oval">
+                <img src="image2.jpg" alt="Image 2">
+                <div class="oval-text">Text 2</div>
+            </div>
+            <div class="oval">
+                <img src="image3.jpg" alt="Image 3">
+                <div class="oval-text">Text 3</div>
+            </div>
+            <div class="oval">
+                <img src="image4.jpg" alt="Image 4">
+                <div class="oval-text">Text 4</div>
+            </div>
+            <div class="oval">
+                <img src="image5.jpg" alt="Image 5">
+                <div class="oval-text">Text 5</div>
+            </div>
+        </div>
+        <div class="principles"></div>
+        <p>My first paragraph.</p>
+        <h2>blah</h2>
+    </body>
+</html>
