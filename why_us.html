@@ -1,7 +1,35 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="https://rhythm-master.github.io/style.css">
 <html>
     <head>
         <style>
+            .button-container {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .button {
+                display: inline-block;
+                margin-right: 10px;
+                padding: 10px 20px;
+                background-color: transparent;
+                color: black;
+                text-decoration: none;
+                border-radius: 5px;
+                border: 2px solid black;
+                font-family: Arial;
+            }
+            .button-top {
+                border-radius: 20px;
+                border: 2px solid black;
+                padding: 10px 20px;
+                background-color: #a44269;
+                color: white;
+                text-decoration: none;  
+                font-family: Arial;
+                }
+
             body {
                 background-color:rgb(192, 238, 238);
                 margin: 0;
@@ -50,6 +78,18 @@
         </style>
     </head>
     <body>
+        <div class="header">
+            <img class="logo" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo">
+            <h1 class="company-name">RhythmMaster</h1>
+        </div>
+        
+        <div class="button-container">
+            <a class="button" href="#">About</a>
+            <a class="button" href="#">Projects</a>
+            <a class="button" href="#">Pricing</a>
+            <a class="button-top" href="#">Login/Sign Up</a>
+        </div>
+
         <div class = "title"> 
             <h1> Why choose RhythmMaster? </h1>
         </div>
