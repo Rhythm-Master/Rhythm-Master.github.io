@@ -62,7 +62,7 @@
             margin: 0 auto;
             padding: 10px;
             box-sizing: border-box;
-            background-color: #e0426e;
+            background-color: white ;
         }
         
         .container1 {
@@ -123,13 +123,36 @@
             box-sizing: border-box;
             text-align: center;
         }
-        .people{
+        /* .people{
             width: 19%;
-            border-radius: %;
+            border-radius: 14%;
             position: relative;
 
+        } */
+
+
+        .people-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
+        .people {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .people img {
+            width: 100%; /* Adjust the width as needed */
+            height: 100%; /* Adjust the height as needed */
+            border-radius: 13%;
+            object-fit: cover;
+        }
+
+        .people p {
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
 
 
 
@@ -161,14 +184,45 @@
 
 
     <div class="container content-container">
+        <div class="people-container">
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Yiming">
+                <p>Yiming</p>
+            </div>
 
-        <img class = 'people' src="pictures used\yiming.jpg">
-        <img class = 'people' src="pictures used\yiming.jpg">
-        <img class = 'people' src="pictures used\yiming.jpg">
-        <img class = 'people' src="pictures used\yiming.jpg">
-        <img class = 'people' src="pictures used\yiming.jpg">
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
+            </div>
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
+            </div>
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
+            </div>
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
+            </div>
 
+            <!-- Add more people as needed -->
+        </div>
     </div>
+
+
+    <!-- <div class="container content-container">
+
+        <img class = 'people' src="pictures used\yiming.jpg">
+        
+
+        <img class = 'people' src="pictures used\yiming.jpg">
+        <img class = 'people' src="pictures used\yiming.jpg">
+        <img class = 'people' src="pictures used\yiming.jpg">
+        <img class = 'people' src="pictures used\yiming.jpg">
+
+    </div> -->
 
 
 

@@ -1,70 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About us</title>
-        <meta charset="UTF-8">
-        <style>
-            .container {
-                width: 100%;
-                height: 150px; /* Adjust the height as needed */
-                max-height: 200px;
-                min-height: 70px;
-                background-color: lightgray;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                margin: 0 auto;
-            }
+<html lang="en">
 
-            .oval {
-                width: 14%;
-                max-width: -content;
-                padding-top: 14%;
-                position: relative;
-            }
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" href="https://rhythm-master.github.io/style.css">
+    <style>
+        .people-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
 
-            .oval img {
-                width: 100%; /* Make the image fill the oval */
-                height: 100%; /* Make the image fill the oval */
-                border-radius: 50%; /* Maintain the circular shape */
-            }
+        .people {
+            text-align: center;
+        }
 
-            .oval-text {
-                position: absolute;
-                bottom: -20px; /* Adjust the distance of the text from the oval */
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 1; /* Ensure the text is displayed above the image */
-            }
-        </style>
-    </head>
-    <body>
-        <h1>My First Heading</h1>
-        <div class="container">
-            <div class="oval">
-                <img src="image1.jpg" alt="Image 1">
-                <div class="oval-text">Text 1</div>
+        .people img {
+            width: 100px; /* Adjust the width as needed */
+            height: 100px; /* Adjust the height as needed */
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .people p {
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container content-container">
+        <div class="people-container">
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Yiming">
+                <p>Yiming</p>
             </div>
-            <div class="oval">
-                <img src="image2.jpg" alt="Image 2">
-                <div class="oval-text">Text 2</div>
+
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
             </div>
-            <div class="oval">
-                <img src="image3.jpg" alt="Image 3">
-                <div class="oval-text">Text 3</div>
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
             </div>
-            <div class="oval">
-                <img src="image4.jpg" alt="Image 4">
-                <div class="oval-text">Text 4</div>
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
             </div>
-            <div class="oval">
-                <img src="image5.jpg" alt="Image 5">
-                <div class="oval-text">Text 5</div>
+            <div class="people">
+                <img src="pictures used/yiming.jpg" alt="Another Person">
+                <p>Another Person</p>
             </div>
+
+            <!-- Add more people as needed -->
         </div>
-        <div class="principles"></div>
-        <p>My first paragraph.</p>
-        <h2>blah</h2>
-    </body>
+    </div>
+</body>
+
 </html>
