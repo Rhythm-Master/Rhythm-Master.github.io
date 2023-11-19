@@ -1,54 +1,124 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About us</title>
+        <title>Partners Program</title>
         <meta charset="UTF-8">
-    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|League Spartan">
+
         <style>
-            /* Your existing styles... */
-    
             .button {
-                display: inline-block;
-                margin-right: 10px;
-                padding: 10px 20px;
-                background-color: transparent;
-                color: black;
-                text-decoration: none;
-                border-radius: 5px;
-                border: 2px solid black;
-                font-family: Arial;
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-family: Arial;
             }
-    
+
             .button-top {
                 border-radius: 20px;
-                border: 2px solid black;
+                border: 1px solid black;
                 padding: 10px 20px;
                 background-color: #a44269;
                 color: white;
                 text-decoration: none;
                 font-family: Arial;
             }
-    
+
             .button-container {
                 position: absolute;
                 top: 10px;
                 right: 10px;
             }
+
+            .page_back{
+                width: 100%; 
+                height: auto;
+                background-color: #FFFFF; 
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                padding-top: 100px;
+                padding-bottom: 10px;
+                flex-grow: 1;
+                margin: 0 auto; 
+            }
+
+            .two_boxes{
+                width: 50%;
+                height: 75%
+                max-width: 500px; /* Optional: Set a maximum width for the boxes */
+                max-height: 1000px;
+                background-color: #f56476;
+                margin: 30px;
+                padding: 20px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxes img{
+                width: 70%;
+                height: auto;
+                border-radius: 3cap;
+                border-style: outset;
+                border-color: #000000;
+                margin: 10px;   
+            }
+
+
+            .boxes ul{
+                width: 70%;
+                height: auto;
+                border-radius: 3cap;
+                margin: 10px;    
+                text-align: center;
+            }
+
+            .boxes ul li{
+                margin-left: 1em;
+                color: #d1c9c6;
+                text-align: left;
+            }
+
         </style>
     </head>
+
+   
     <body>
-        <div class="header">
-            <!-- Your header content... -->
-        </div>
-    
         <div class="button-container">
+            <a class="button" href="https://rhythm-master.github.io/index">Home</a>
             <a class="button" href="https://rhythm-master.github.io/about">About</a>
             <a class="button" href="https://rhythm-master.github.io/why_us">Why Us</a>
             <a class="button" href="https://rhythm-master.github.io/pricing">Pricing</a>
             <a class="button-top" href="#">Login/Sign Up</a>
         </div>
-    
-        <!-- Rest of your HTML content... -->
+
+        <div class="page_back">
+            <div class="two_boxes">
+                <h1 style="color: #000000;font-family: Nunito"> Why Join Partners?</h1>
+                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\violinGuy.jpg" alt="Conducter">
+                <ul style= "font-family: League Spartan">
+                    <li><p>Teachers are Paid to Share Their Knowledge</p></li>
+                    <li><p>Students Recieve a Personalized Experience</p></li>
+                    <li><p>Join a Supportive, Global Community</p></li>
+                </ul>
+            </div>
+            <div class="two_boxes">
+                <h1 style="color: #000000; font-family: Nunito">What is Partners</h1>
+                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\bagpipeGuy.jpg" alt="Conducter">
+                <ul style="font-family: League Spartan">
+                    <li><p>Verified Users Teach Classes</p></li>
+                    <li><p>Teachers from around the globe teach a plethera of instruments</p></li>
+                    <li><p>Only for Pro Subscriptions</p></li>
+                </ul>
+            </div>
     </body>
 </html>
 
