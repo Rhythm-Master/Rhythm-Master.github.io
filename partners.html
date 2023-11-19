@@ -1,180 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body{
-                background-color: #f56476;
-                margin: 0;
-                margin-top:80px;
-                padding:0;
-            }
 
-            header{
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: #f56476;
-                display: flex;
-                width: 100%;
-                align-items: center;
+<head>
+<title>Partners Program</title>
+    <meta charset="UTF-8">
+    <style>
+    
+     .button {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid black;
+            font-family: Arial;
+        }
 
-            }
+        .button-top {
+            border-radius: 20px;
+            border: 2px solid black;
+            padding: 10px 20px;
+            background-color: #a44269;
+            color: white;
+            text-decoration: none;
+            font-family: Arial;
+        }
 
-            header img{
-                width: 100px;
-                height: auto;
-                border-radius: 3cap;
-                margin-left: 10px;
-            }
+        .button-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        body {
+            background-color: #FFFFFF;
+            margin: 0;
+            margin-top: 80px;
+            padding: 0;
+        }
 
-            header h1{
-                margin-left: 10px;
-                color: #5e4352;
-            }
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            padding: 30px;
+            padding-bottom: 40px;
+            flex-grow: 1;
+            margin: 0 auto;
+        }
 
-            header ul{
-                vertical-align:bottom;
-                width: max-content;
-                height: 100%;
-                list-style: none;
-                display: flex;
-                flex-grow: 1;
-                margin-left: 10px;
-                margin-right: 10px;
-                padding: 0;
-            }
+        .boxes {
+            width: 50%;
+            max-width: 500px;
+            background-color: #dfbbb1;
+            margin: 30px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-            header ul p{
-                vertical-align: middle;
-                display: flex;
-                align-items: center;
-                flex: 1;
-                justify-content: center;
-                height: 100%;
-                color: #5e4352;
-                padding: 10px 20px;
-                margin:0;
-                background-color: #f56476;
-            }
+        .boxes img {
+            width: 70%;
+            height: auto;
+            border-radius: 3px;
+            border-style: outset;
+            border-color: #5e4352;
+            margin: 10px;
+        }
 
-            header ul p:hover{
-                background-color: #dfbbb1;
-                text-decoration: underline;
-            }
-            
-            .container{
-                width: 100%; 
-                height: auto;
-                /* max-height: 200px; */
-                /* min-height: 70px; */
-                background-color: #d1c9c6; 
-                display: flex;
-                justify-content: center;
-                align-items: stretch;
-                padding: 30px;
-                padding-bottom: 40px;
-                flex-grow: 1;
-                margin: 0 auto; 
-            }
+        .boxes ul {
+            width: 70%;
+            height: auto;
+            border-radius: 3px;
+            margin: 10px;
+            text-align: center;
+        }
 
-            .boxes {
-                width: 50%;
-                max-width: 500px; /* Optional: Set a maximum width for the boxes */
-                background-color: #5e4352;
-                margin: 30px;
-                padding: 20px;
-                box-sizing: border-box;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+        .boxes ul li {
+            margin-left: 1em;
+            color: #000000;
+            text-align: left;
+            font-family: Trebuchet MS;
+        }
+    </style>
+</head>
 
-            .boxes img{
-                width: 70%;
-                height: auto;
-                border-radius: 3cap;
-                border-style: outset;
-                border-color: #5e4352;
-                margin: 10px;   
-            }
+<body>
 
+    <div class="button-container">
+        <a class="button" href="https://rhythm-master.github.io/about">About</a>
+        <a class="button" href="https://rhythm-master.github.io/why_us">Why Us</a>
+        <a class="button" href="https://rhythm-master.github.io/pricing">Pricing</a>
+        <a class="button-top" href="#">Login/Sign Up</a>
+    </div>
 
-            .boxes ul{
-                width: 70%;
-                height: auto;
-                border-radius: 3cap;
-                margin: 10px;    
-                text-align: center;
-            }
-
-            .boxes ul li{
-                margin-left: 1em;
-                color: #d1c9c6;
-                text-align: left;
-               /* background-color: aqua;*/
-            }
-
-            .button-container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-                padding: 15px 45px;
-            }
-
-        </style>
-    </head>
-
-    <header>
-        <!--dummy images for all-->
-        <img src=""C:\web_projects\Rhythm-Master.github.io\pictures used\logo.png"" alt="hello">
-        
-        <h1>
-            Rhythm Master
-        </h1>
-        <ul>
-            <p>Home</p>
-            <p>About</p>
-            <p>Features</p>
-            <p>Why us?</p>
-            <p>Partners</p>
-        </ul>
-    </header>
-    <body>
-        <div class="container">
-            <div class="boxes">
-                <h1 style="color: #d1c9c6;">
-                    Why Join?
-                </h1>
-            
-                <!--dummy images, change to something cheesy like someone playing a violin-->
-                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\violinGuy.jpg" alt="Conducter">
-                <ul>
-                    <li><p>Teachers are Paid to Share Their Knowledge</p></li>
-                    <li><p>Students Recieve a Personalized Experience</p></li>
-                    <li><p>Join a Supportive, Global Community</p></li>
-                </ul>
-            </div>
-            <div class="boxes">
-                <h1 style="color: #d1c9c6;">
-                    Pro
-                </h1>
-             
-                <!--dummy images, change to BAGPIPES!!!-->
-                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\bagpipeGuy.jpg" alt="Conducter">
-                <ul>
-                    <li><p>Verified Users Teach Classes</p></li>
-                    <li><p>Teachers from around the globe teach a plethera of instruments</p></li>
-                    <li><p>Only for Pro Subscriptions</p></li>
-                 
-                  
-                </ul>
-            </div>
+    <div class="container">
+        <div class="boxes">
+            <h1 style="color: #000000; font-family: 'YourCustomFont', Trebuchet MS;">Why Join Our Program?</h1>
+            <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\violinGuy.jpg" alt="Violin Player">
+            <ul>
+                <li><p>Teachers are Paid to Share Their Knowledge</p></li>
+                <li><p>Students Receive a Personalized Experience</p></li>
+                <li><p>Join a Supportive, Global Community</p></li>
+            </ul>
         </div>
-                <div class="button-container">
-                <button>Become A Partner</button>
-                <button>Become A Student</button>
+
+        <div class="boxes">
+            <h1 style="color: #000000; font-family: 'YourCustomFont', Trebuchet MS;">What is Partners?</h1>
+            <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\bagpipeGuy.jpg" alt="Bagpipe Player">
+            <ul>
+                <li><p>Verified Users Teach Classes</p></li>
+                <li><p>Teachers from around the globe teach a plethora of instruments</p></li>
+                <li><p>Only for Pro Subscriptions</p></li>
+            </ul>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
+
