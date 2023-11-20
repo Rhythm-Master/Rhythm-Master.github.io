@@ -23,7 +23,7 @@
                 text-decoration: none;
                 border-radius: 5px;
                 border: 2px solid black;
-                font-family: Arial;
+                font-family: Nunito;
             }
             .button-top {
                 border-radius: 20px;
@@ -32,14 +32,13 @@
                 background-color: #a44269;
                 color: white;
                 text-decoration: none;  
-                font-family: Arial;
+                font-family: Nunito;
                 }
 
             body {
-                background-color:bisque;
+                background-color: #d1c9c6;
                 margin: 0;
-    
-                font-family: Trebuchet MS;
+                font-family: Nunito;
                 color: rgb(217, 151, 186);
             }
 
@@ -57,18 +56,23 @@
             }
 
             .container{
+
                 display: flex;
-                transform: translateY(30px);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+            
+            .image_container{
+                position: relative;
+                overflow: hidden;
             }
 
-            .photo{
-                position: relative;
-                margin: 30px;
-                width: 22vw;
-                height: 22vw;
-                border: 10px solid #c08394;
-                background-color: #e292a9;
+            .image{
+                width: 17vw;
+                height: 17vw;
             }
+
             .section{
                 text-align: center;
                 flex: 1;
@@ -76,14 +80,36 @@
             }
 
             .description{
-                font-size: 13px;
+                font-size: 20px;
+                margin-top: -30px;
                 margin-left: 25px;
                 margin-right: 25px;
             }
 
             .headerThing{
+                font-size: 30px;
                 text-align: center;
+                color:rgb(229, 126, 181)
             }
+
+            .bg-circles{
+                position: absolute;
+                width: 13vw; /* Adjust the size of the circle */
+                height: 13vw; /* Adjust the size of the circle */
+                border-radius: 50%;
+                background-color: #c0836d;
+                z-index: -1;
+                opacity: 0.2
+                
+            }
+
+            .bg-circles:nth-child(1){
+                top: 1.4vw;
+                left: 10.4vw;
+            }
+
+
+         
         </style>
     </head>
     <body>
@@ -93,9 +119,10 @@
         </div>
         
         <div class="button-container">
-            <a class="button" href="#">About</a>
-            <a class="button" href="#">Projects</a>
-            <a class="button" href="#">Pricing</a>
+            <a class="button" href="https://rhythm-master.github.io/index">Home</a>
+            <a class="button" href="https://rhythm-master.github.io/about">About</a>
+            <a class="button" href="https://rhythm-master.github.io/why_us">Why Us</a>
+            <a class="button" href="https://rhythm-master.github.io/pricing">Pricing</a>
             <a class="button-top" href="#">Login/Sign Up</a>
         </div>
 
@@ -104,8 +131,9 @@
         </div>
         <div class="container">
             <div class="section">
-                <div class="photo">
-                    
+                <div class="image_container">
+                    <div class="bg-circles"></div>
+                    <img class="image" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/trebleclef.png" alt="Photo of Music Note">
                 </div>
                 <div class="headerThing">
                     <h4>Music Made Easy</h4>
@@ -116,8 +144,9 @@
             </div>
 
             <div class="section">
-                <div class="photo">
-                    
+                <div class="image_container">
+                    <div class="bg-circles"></div>
+                    <img class="image" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/bagpipe.png" alt="Photo of Bagpipe">
                 </div>
                 <div class="headerThing">
                     <h4>Interactive Learning Roadmap</h4>
@@ -128,7 +157,9 @@
             </div>
 
             <div class="section">
-                <div class="photo">
+                <div class="image_container">
+                    <div class="bg-circles"></div>
+                    <img class="image" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/dollarsign.png" alt="Photo of Money Sign">
                     
                 </div>
                 <div class="headerThing">
