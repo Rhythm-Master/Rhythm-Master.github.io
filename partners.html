@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="https://rhythm-master.github.io/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|League Spartan">
 <html>
     <head>
         <title>Partners Program</title>
@@ -6,6 +8,22 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|League Spartan">
 
         <style>
+            
+            .logo{
+                height : 50px;
+                border-radius: 50px;
+            }
+
+            .company-name{
+                font-family: Nunito;
+            }
+
+            .button-container {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
             .button {
                 display: inline-block;
                 margin-right: 10px;
@@ -18,26 +36,23 @@
                 font-family: Nunito;
             }
 
+            .button:hover{
+                background-color: #bab0ad
+            }
             .button-top {
                 border-radius: 20px;
                 border: 1px solid black;
                 padding: 10px 20px;
                 background-color: #a44269;
-                color: white;
+                color: #d1c9c6;
                 text-decoration: none;
                 font-family: Nunito;
-            }
-
-            .button-container {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-            }
+                }
 
             .page_back{
                 width: 100%; 
                 height: auto;
-                background-color: #FFFFF; 
+                background-color:  #d1c9c6; 
                 display: flex;
                 justify-content: center;
                 align-items: stretch;
@@ -59,8 +74,7 @@
 
             .two_boxes{
                 width: 50%;
-                height: 75%
-                max-width: 500px; /* Optional: Set a maximum width for the boxes */
+                height: 75%;
                 max-height: 1000px;
                 background-color: #a44269;
                 margin: 30px;
@@ -76,19 +90,18 @@
             }
 
             .two_boxes img{
-                widht: 400px;
+                width: 400px;
                 height: 200px;
+                border-radius: 3cap;
+                border-style: outset;
+                border-color: #42a47d;
                 object-fit: cover;
-                border-radius: 5px;
             }
 
 
             .boxes img{
                 width: 70%;
                 height: auto;
-                border-radius: 3cap;
-                border-style: outset;
-                border-color: #000000;
                 margin: 10px;   
             }
 
@@ -112,37 +125,45 @@
                 width: 100%;
                 height: 45px;
                 padding: 10px;
-                color: Black;
+                color: #d1c9c6;
                 text-decoration: None;
                 border-radius: 5px;
-                border: 1px solid black;
+                border: 1px solid #d1c9c6;
                 font-family: Nunito;
                 margin-top: 20px;
                 text-align: center;
                 font-size: 22px;
             }
 
+            body {
+                background-color: #d1c9c6;
+                margin: 0;
+                font-family: Nunito;
+                color: #d1c9c6;
+            }
         </style>
     </head>
 
    
     <body>
 
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo" width="45" height="45">
+        <div class="header">
+            <a href="https://rhythm-master.github.io/index"> <img class="logo" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo" > </a>
+            <h1 class="company-name">RhythmMaster</h1> </a>
         </div>
-
+        
         <div class="button-container">
             <a class="button" href="https://rhythm-master.github.io/index">Home</a>
             <a class="button" href="https://rhythm-master.github.io/about">About</a>
             <a class="button" href="https://rhythm-master.github.io/why_us">Why Us</a>
             <a class="button" href="https://rhythm-master.github.io/pricing">Pricing</a>
+            <a class="button" href="https://rhythm-master.github.io/partners">Partners</a>
             <a class="button-top" href="#">Login/Sign Up</a>
         </div>
 
         <div class="page_back">
             <div class="two_boxes">
-                <h1 style="color: #000000;font-family: Nunito"> Why Join The Partners Program?</h1>
+                <h1 style="color: #d1c9c6;font-family: Nunito"> Why Join The Partners Program?</h1>
                 <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/Symphony.jpg">
                 <ul style= "font-family: League Spartan; font-size: 20px;">
                     <p>All of our instructors are paid for efforts! 
@@ -156,7 +177,7 @@
                 <a class='box-button' href='#'>Start Learning!</a>
             </div>
             <div class="two_boxes">
-                <h1 style="color: #000000; font-family: Nunito">What is The Partners Program?</h1>
+                <h1 style="color: #d1c9c6; font-family: Nunito">What is The Partners Program?</h1>
                 <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/MusicSheets.jpg">
                 <ul style="font-family: League Spartan; font-size: 20px;">
                     <p>Thanks to our meticulous verification system only the best of the best are selected to teach. This give each one of our courses top-level quality that ensures you'll become a Rhyth Master! </p>
