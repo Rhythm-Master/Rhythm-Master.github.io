@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="https://rhythm-master.github.io/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|League Spartan">
 <html>
     <head>
+        <title>Why Us</title>
         <style>
             .logo{
                 height : 50px;
                 border-radius: 50px;
+            }
+
+            .company-name{
+                font-family: Nunito;
             }
 
             .button-container {
@@ -22,16 +28,20 @@
                 color: black;
                 text-decoration: none;
                 border-radius: 5px;
-                border: 2px solid black;
+                border: 1px solid black;
                 font-family: Nunito;
+            }
+
+            .button:hover{
+                background-color: #bab0ad
             }
             .button-top {
                 border-radius: 20px;
-                border: 2px solid black;
+                border: 1px solid black;
                 padding: 10px 20px;
                 background-color: #a44269;
                 color: white;
-                text-decoration: none;  
+                text-decoration: none;
                 font-family: Nunito;
                 }
 
@@ -39,13 +49,13 @@
                 background-color: #d1c9c6;
                 margin: 0;
                 font-family: Nunito;
-                color: rgb(217, 151, 186);
+                color: rgb(255, 241, 250);
             }
 
             .title {
                 height: 80px;
                 width: 100%;  
-                background-color:#dfbbb1;
+                color: #a44269;
             }
 
             h1{
@@ -53,6 +63,7 @@
                 position: relative;
                 text-align: center;
                 top: 25%;
+
             }
 
             .container{
@@ -80,41 +91,47 @@
             }
 
             .description{
-                font-size: 20px;
+                font-size: 1.1vw;
                 margin-top: -30px;
                 margin-left: 25px;
                 margin-right: 25px;
             }
 
             .headerThing{
-                font-size: 30px;
+                font-size: 2vw;
                 text-align: center;
-                color:rgb(229, 126, 181)
+                font-weight: bold;
+                color: rgb(223, 123, 173)
             }
 
             .bg-circles{
                 position: absolute;
-                width: 13vw; /* Adjust the size of the circle */
-                height: 13vw; /* Adjust the size of the circle */
+                width: 12vw; 
+                height: 12vw; 
                 border-radius: 50%;
-                background-color: #c0836d;
+                background-color: #5e4352;
                 z-index: -1;
-                opacity: 0.2
-                
+                opacity: 0.17;
+                top: 2vw;
+                left: 10.6vw;
             }
-
-            .bg-circles:nth-child(1){
-                top: 1.4vw;
-                left: 10.4vw;
+            
+            .bg-bar{
+                position: absolute;
+                width: 100%; 
+                height: 12vw; 
+                background-color: #5e4352;
+                z-index: -1;
+                opacity: 0.09;
+                transform: translateY(0.9vw);
             }
-
 
          
         </style>
     </head>
     <body>
         <div class="header">
-            <img class="logo" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo">
+            <a href="https://rhythm-master.github.io/index"> <img class="logo" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo" > </a>
             <h1 class="company-name">RhythmMaster</h1>
         </div>
         
@@ -123,6 +140,7 @@
             <a class="button" href="https://rhythm-master.github.io/about">About</a>
             <a class="button" href="https://rhythm-master.github.io/why_us">Why Us</a>
             <a class="button" href="https://rhythm-master.github.io/pricing">Pricing</a>
+            <a class="button" href="https://rhythm-master.github.io/partners">Partners</a>
             <a class="button-top" href="#">Login/Sign Up</a>
         </div>
 
@@ -135,11 +153,15 @@
                     <div class="bg-circles"></div>
                     <img class="image" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/trebleclef.png" alt="Photo of Music Note">
                 </div>
+                <div class="bg-bar">
+                    
+                </div>
                 <div class="headerThing">
                     <h4>Music Made Easy</h4>
                 </div>
                 <div class="description">
-                    blah blahb lbbl blfkdi fjgijij fijsijidjsfij idsjifjsijfi sdjifjisj ifjisjif jsdijiji
+                    We know how hard it is to start learning music, which is why we made our app 
+                    as intuitive and beginner-friendly as possible!
                 </div>
             </div>
 
@@ -149,10 +171,11 @@
                     <img class="image" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/bagpipe.png" alt="Photo of Bagpipe">
                 </div>
                 <div class="headerThing">
-                    <h4>Interactive Learning Roadmap</h4>
+                    <h4>Personalized Learning Roadmap</h4>
                 </div>
                 <div class="description">
-                    blah blah blabh alhbal hal halbhal bhal bhalbhalbh albhalbh alhb alhblahbl ahblh
+                    Our AI coaches will help analyze your musical abilities and create a roadmap 
+                    which is guaranteed to quickly improve your playing.
                 </div>
             </div>
 
@@ -166,7 +189,8 @@
                     <h4>Cheaper Alternative</h4>
                 </div>
                 <div class="description">
-                    blah blah very cheap very good description better than yousician we are
+                    With our premium plan at only $10.00 per month, Rhythm Master is sure to
+                    deliver its worth and more!
                 </div>
             </div>
         </div>
