@@ -15,7 +15,7 @@
             text-decoration: none;
             border-radius: 5px;
             border: 1px solid black;
-            font-family: Arial;
+            font-family: Nunito;
             }
 
             .button-top {
@@ -25,7 +25,7 @@
                 background-color: #a44269;
                 color: white;
                 text-decoration: none;
-                font-family: Arial;
+                font-family: Nunito;
             }
 
             .button-container {
@@ -47,6 +47,16 @@
                 margin: 0 auto; 
             }
 
+            .logo{
+                display: inline-block;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            .logo img{
+                border-radius: 5px;
+            }
+
             .two_boxes{
                 width: 50%;
                 height: 75%
@@ -61,7 +71,17 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
+                overflow: hidden;
             }
+
+            .two_boxes img{
+                widht: 400px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
 
             .boxes img{
                 width: 70%;
@@ -92,6 +112,11 @@
 
    
     <body>
+
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo" width="45" height="45">
+        </div>
+
         <div class="button-container">
             <a class="button" href="https://rhythm-master.github.io/index">Home</a>
             <a class="button" href="https://rhythm-master.github.io/about">About</a>
@@ -102,26 +127,47 @@
 
         <div class="page_back">
             <div class="two_boxes">
-                <h1 style="color: #000000;font-family: Nunito"> Why Join Partners?</h1>
-                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\violinGuy.jpg" alt="Conducter">
+                <h1 style="color: #000000;font-family: Nunito"> Why Join The Partners Program?</h1>
+                <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/Symphony.jpg">
                 <ul style= "font-family: League Spartan">
-                    <li><p>Teachers are Paid to Share Their Knowledge</p></li>
-                    <li><p>Students Recieve a Personalized Experience</p></li>
-                    <li><p>Join a Supportive, Global Community</p></li>
+                    <p>Teachers are Paid to Share Their Knowledge</p>
+                    <p>Students Recieve a Personalized Experience</p>
+                    <p>Join a Supportive, Global Community</p>
                 </ul>
             </div>
             <div class="two_boxes">
-                <h1 style="color: #000000; font-family: Nunito">What is Partners</h1>
-                <img src="C:\web_projects\Rhythm-Master.github.io\pictures used\bagpipeGuy.jpg" alt="Conducter">
+                <h1 style="color: #000000; font-family: Nunito">What is The Partners Program?</h1>
+                <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/MusicSheets.jpg">
                 <ul style="font-family: League Spartan">
-                    <li><p>Verified Users Teach Classes</p></li>
-                    <li><p>Teachers from around the globe teach a plethera of instruments</p></li>
-                    <li><p>Only for Pro Subscriptions</p></li>
+                    <p>Verified Users Teach Classes</p>
+                    <p>Teachers from around the globe teach a plethera of instruments</p>
+                    <p>Only for Pro Subscriptions</p>
                 </ul>
             </div>
+        </div>
+
+        <script>
+            function addHoverEffect(element, hoverColor) {
+                element.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = hoverColor;
+                });
+
+                element.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = 'transparent';
+                });
+             }
+
+             var buttons = document.querySelectorAll('.button');
+             buttons.forEach(function(button) {
+                addHoverEffect(button, '#808080');
+             });
+
+             var buttonTop = document.querySelectorAll('.button-top');
+             addHoverEffect(buttonTop, '#808080');
+        </script>
+
     </body>
 </html>
-
 
 
 
