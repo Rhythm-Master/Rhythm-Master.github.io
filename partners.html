@@ -7,15 +7,15 @@
 
         <style>
             .button {
-            display: inline-block;
-            margin-right: 10px;
-            padding: 10px 20px;
-            background-color: transparent;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            border: 1px solid black;
-            font-family: Nunito;
+                display: inline-block;
+                margin-right: 10px;
+                padding: 10px 20px;
+                background-color: transparent;
+                color: black;
+                text-decoration: none;
+                border-radius: 5px;
+                border: 1px solid black;
+                font-family: Nunito;
             }
 
             .button-top {
@@ -41,7 +41,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: stretch;
-                padding-top: 100px;
+                padding-top: 50px;
                 padding-bottom: 10px;
                 flex-grow: 1;
                 margin: 0 auto; 
@@ -62,7 +62,7 @@
                 height: 75%
                 max-width: 500px; /* Optional: Set a maximum width for the boxes */
                 max-height: 1000px;
-                background-color: #f56476;
+                background-color: #a44269;
                 margin: 30px;
                 padding: 20px;
                 box-sizing: border-box;
@@ -107,6 +107,21 @@
                 text-align: left;
             }
 
+            .box-button {
+                display: blocks;
+                width: 100%;
+                height: 45px;
+                padding: 10px;
+                color: Black;
+                text-decoration: None;
+                border-radius: 5px;
+                border: 1px solid black;
+                font-family: Nunito;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 22px;
+            }
+
         </style>
     </head>
 
@@ -129,20 +144,26 @@
             <div class="two_boxes">
                 <h1 style="color: #000000;font-family: Nunito"> Why Join The Partners Program?</h1>
                 <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/Symphony.jpg">
-                <ul style= "font-family: League Spartan">
-                    <p>Teachers are Paid to Share Their Knowledge</p>
-                    <p>Students Recieve a Personalized Experience</p>
-                    <p>Join a Supportive, Global Community</p>
+                <ul style= "font-family: League Spartan; font-size: 20px;">
+                    <p>All of our instructors are paid for efforts! 
+                    At Rhythm Master we believe that teachers are the backbone of our society. 
+                    That is why each teacher is paid for their work.</p>
+                    <p>Students recieve a personalized experience! 
+                    Alongside the professional advice and lessons our teachers provide, each student has access to 24/7 support through our direct message service.
+                    Students can have real time conversations with our experts and ask them any questions they may have. </p>
+                    <p>Join a supportive, global community filled with students and experts that are there to help. Make new friends, connections and partnerships through the love of music!</p>
                 </ul>
+                <a class='box-button' href='#'>Start Learning!</a>
             </div>
             <div class="two_boxes">
                 <h1 style="color: #000000; font-family: Nunito">What is The Partners Program?</h1>
                 <img src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/MusicSheets.jpg">
-                <ul style="font-family: League Spartan">
-                    <p>Verified Users Teach Classes</p>
-                    <p>Teachers from around the globe teach a plethera of instruments</p>
-                    <p>Only for Pro Subscriptions</p>
+                <ul style="font-family: League Spartan; font-size: 20px;">
+                    <p>Thanks to our meticulous verification system only the best of the best are selected to teach. This give each one of our courses top-level quality that ensures you'll become a Rhyth Master! </p>
+                    <p>Teachers from around the globe teach a plethera of instruments. Thanks to our global presence, we are able to provide lessons in a varierty of instruments from different cultures and coutries.</p>
+                    <p>It is only available for pro subscriptions. In addition to pitch detection, AI coaches, and a personalized learning roadmap, each pro subscription comes with access to our Parters Program. </p>
                 </ul>
+                <a class='box-button' href='#'>Become a Partner!</a>
             </div>
         </div>
 
@@ -159,11 +180,17 @@
 
              var buttons = document.querySelectorAll('.button');
              buttons.forEach(function(button) {
-                addHoverEffect(button, '#808080');
+                addHoverEffect(button, '#a44269');
+             });
+
+             var buttons = document.querySelectorAll('.box-button');
+             buttons.forEach(function(button) {
+                addHoverEffect(button, '#c56e90');
              });
 
              var buttonTop = document.querySelectorAll('.button-top');
              addHoverEffect(buttonTop, '#808080');
+
         </script>
 
     </body>
