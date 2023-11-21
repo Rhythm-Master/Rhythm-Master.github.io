@@ -1,21 +1,68 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="https://rhythm-master.github.io/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|League Spartan">
 <html lang="en">
 <head>
   <style>
+
+
     * {
       margin: 0px;
       padding: 0px;
     }
 
+    .logo{
+      height : 50px;
+      border-radius: 50px;
+    }
+
+    .company-name{
+      font-family: Nunito;
+    }
+
+    .button-container {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 20px;
+      background-color: transparent;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 1px solid black;
+      font-family: Nunito;
+    }
+
+    .button:hover{
+      background-color: #bab0ad
+     }
+
+    .button-top {
+      border-radius: 20px;
+      border: 1px solid black;
+      padding: 10px 20px;
+      background-color: #a44269;
+      color: white;
+      text-decoration: none;
+      font-family: Nunito;
+    }
+
+    body {
+      background-color: #d1c9c6;
+      margin: 0;
+      font-family: Nunito;
+      color: rgb(255, 241, 250);
+    }
 
     .logo{
       height: 50px;
       border-radius : 50px
-      
-
     }
-
-
 
     .parallax-1 {
 		width: 100%;
@@ -83,33 +130,6 @@
       color: white;
     }
 
-    .button-container {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-right: 10px;
-      padding: 10px 20px;
-      background-color: transparent;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-      border: 2px solid black;
-	  font-family: Arial;
-    }
-
-    .button-top {
-      border-radius: 20px;
-      border: 2px solid black;
-      padding: 10px 20px;
-      background-color: #a44269;
-      color: white;
-	  text-decoration: none;  
-	  font-family: Arial;
-    }
 
     .button-signup {
 		margin: auto;
@@ -142,16 +162,18 @@
 
 <body>
   <div class="header">
-    <img class="logo" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo">
-    <h1 class="company-name">RhythmMaster</h1>
-  </div>
+    <a href="https://rhythm-master.github.io/index"> <img class="logo" src="https://raw.githubusercontent.com/Rhythm-Master/Rhythm-Master.github.io/main/pictures%20used/logo.png" alt="Company Logo" > </a>
+    <h1 class="company-name">RhythmMaster</h1> </a>
+</div>
 
-  <div class="button-container">
-    <a class="button" href="#">About</a>
-    <a class="button" href="#">Projects</a>
-    <a class="button" href="#">Pricing</a>
+<div class="button-container">
+    <a class="button" href="https://rhythm-master.github.io/index">Home</a>
+    <a class="button" href="https://rhythm-master.github.io/about">About</a>
+    <a class="button" href="https://rhythm-master.github.io/why_us">Why Us</a>
+    <a class="button" href="https://rhythm-master.github.io/pricing">Pricing</a>
+    <a class="button" href="https://rhythm-master.github.io/partners">Partners</a>
     <a class="button-top" href="#">Login/Sign Up</a>
-  </div>
+</div>
 
   <div class="parallax-1">
 	<h4>Welcome to</h4>
@@ -159,7 +181,7 @@
   </div>
 
   <div class="para-2">
-    <p>try our premium services</p>
+    <p>Try Our Premium Services</p>
   </div>
 
   <div class="parallax-2">
@@ -167,7 +189,7 @@
   </div>
 
   <div class="para-2">
-    <p>music lessons at your fingertips!</p>
+    <p>Music Lessons At Your Fingertips!</p>
   </div>
 
   <div class="parallax-1">
@@ -175,7 +197,7 @@
   </div>
 
   <div class="para-2">
-    <p>learn form anyhwere!</p>
+    <p>Learn Form Anywhere!</p>
   </div>
 </body>
 </html>
